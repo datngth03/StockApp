@@ -42,7 +42,7 @@
     Token: your_access_token
     ~~~
 
-    **Purpose:** Users view their Wacthlist  
+    **Purpose:** Users view their Watchlist  
     **Method:** Get  
     **Response body:**  
     ```json
@@ -72,7 +72,7 @@
     Token: your_access_token
     ~~~
 
-    **Purpose:** Add stock to Wacthlist of User  
+    **Purpose:** Add stock to Watchlist of User  
     **Method:** Post  
     **Request body:**  
     ```json

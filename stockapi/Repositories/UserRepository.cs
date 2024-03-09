@@ -9,6 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using System.Security.Cryptography;
 
 namespace StockAppWebApi.Repositories
 {
@@ -71,6 +72,8 @@ namespace StockAppWebApi.Repositories
             User? user = result.FirstOrDefault();
             if (user != null)
             {
+
+
                 //tạo ra jwt string để gửi cho client
                 // Nếu xác thực thành công, tạo JWT token
                 var tokenHandler = new JwtSecurityTokenHandler();
@@ -95,6 +98,4 @@ namespace StockAppWebApi.Repositories
             }
         }
     }
-
 }
-

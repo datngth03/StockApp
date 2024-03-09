@@ -4,8 +4,8 @@ using StockAppWebApi.Repositories;
 
 namespace StockAppWebApi.Services
 {
-	public class QuoteService: IQuoteService
-	{
+    public class QuoteService : IQuoteService
+    {
         private readonly IQuoteRepository _quoteRepository;
         public QuoteService(IQuoteRepository quoteRepository)
         {
@@ -18,7 +18,8 @@ namespace StockAppWebApi.Services
         }
 
         public async Task<List<RealtimeQuote>?> GetRealtimeQuotes(
-            int page, int limit,
+            int page,
+            int limit,
             string sector,
             string industry)
         {

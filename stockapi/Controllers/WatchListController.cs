@@ -27,7 +27,7 @@ namespace StockAppWebApi.Controllers
             _userService = userService;
             _stockService = stockService;
         }
-        [HttpGet]
+        [HttpGet()]
         [JwtAuthorize]
         public async Task<IActionResult> GetMyWatchList(int stockId)
         {

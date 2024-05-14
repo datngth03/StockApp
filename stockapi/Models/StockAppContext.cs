@@ -14,7 +14,6 @@ namespace StockAppWebApi.Models
         public DbSet<Stock> Stocks { get; set; }
         public DbSet<RealtimeQuote> RealtimeQuotes { get; set; }
         public DbSet<Quote> Quotes { get; set; }
-
         public DbSet<Order> Orders { get; set; }
         public DbSet<CoveredWarrant> CoveredWarrants { get; set; }
 
